@@ -275,11 +275,24 @@
             </section>
         </footer>
 
-         <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
+        <!-- Asistente Virtual -->
+        <div class="chatbot-container" id="chatbot">
+            <div class="chatbot-header" onclick="toggleChatbot()">Asistente Virtual</div>
+            <div class="chatbot-body" id="chatbotBody">
+                <!-- Mensajes del asistente virtual -->
+            </div>
+            <div class="chatbot-footer">
+                <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Escribe un mensaje...">
+                <button class="chatbot-send" onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+
+        <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
 
         <script src="./js/main.js"></script>
         <script src="./js/questions.js"></script>
         <script src="./js/slider.js"></script>
         <script src="./js/menu.js"></script>
+        <script src="./js/asistente.js"></script>
     </body>
 </html>
